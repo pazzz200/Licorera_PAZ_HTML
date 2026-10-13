@@ -42,8 +42,6 @@ Hice un diseño minimalista con fondo negro, porque el logo es dorado con negro 
 - Lineas: gris oscuro #333
 - Fuente: Arial, Helvetica, sans-serif
 
-Pendiente: pasar estos valores a variables en :root.
-
 ## 4. Especificidad
 
 La especificidad se cuenta asi: (IDs, clases, etiquetas). Gana la regla que tenga el numero mas alto.
@@ -69,8 +67,6 @@ Gana article img. Por eso las tres fotos quedan del mismo alto.
 
 Gana tfoot td. Por eso el texto de "Domicilio gratis" queda centrado.
 
-Pendiente: un conflicto por orden (empate) y las capturas del inspector.
-
 ## 5. Herencia
 
 - Se hereda: color. Lo puse solo en el body y todos los textos salen blancos.
@@ -90,15 +86,11 @@ Margenes que se solapan: entre los dos parrafos de "Bienvenido" cada uno tiene 1
 
 ## 7. Selectores
 
-Pendiente: todavia no uso una pseudoclase estructural como :nth-child.
-
 ## 8. Responsive
 
 - Las dos paginas tienen la etiqueta meta viewport.
 - Las imagenes tienen max-width 100% para que no se salgan de la pantalla.
 - Las tarjetas tienen min-width 200px, entonces en pantallas pequeñas bajan una debajo de otra.
-
-Pendiente: agregar el @media para celular.
 
 ## 9. Problemas y soluciones
 
