@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Precios y pedidos | LicoreraPAZ</title>
+  <meta name="description" content="Precios de cervezas, aguardiente, ron y combos de LicoreraPAZ. Haz tu pedido con el formulario.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Mismo header y nav que el index -->
+  <header>
+    <h1>LicoreraPAZ</h1>
+
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="index.html#productos">Productos</a>
+      <a href="index.html#horarios">Horarios</a>
+      <a href="index.html#opiniones">Opiniones</a>
+      <a href="index.html#ubicacion">Cómo llegar</a>
+      <a href="precios.html">Precios y pedidos</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="precios">
+      <h2>Precios</h2>
+
+      <!-- table: tabla de precios -->
+      <table>
+        <caption>Lista de precios</caption>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Presentación</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!-- rowspan="2": esta celda ocupa 2 filas -->
+            <td rowspan="2">Cerveza</td>
+            <td>Unidad</td>
+            <td>$3.500</td>
+          </tr>
+          <tr>
+            <td>Six-pack</td>
+            <td>$19.000</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Aguardiente</td>
+            <td>Media</td>
+            <td>$32.000</td>
+          </tr>
+          <tr>
+            <td>Botella</td>
+            <td>$60.000</td>
+          </tr>
+          <tr>
+            <td>Ron</td>
+            <td>Botella</td>
+            <td>$70.000</td>
+          </tr>
+          <tr>
+            <td>Combo fiesta</td>
+            <td>Licor + gaseosa + hielo</td>
+            <td><s>$120.000</s> <strong>$99.000</strong></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <!-- colspan="3": este pedazo ocupa 3 columnas -->
+            <td colspan="3">Domicilio gratis en compras desde $50.000</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="pedido">
+      <h2>Haz tu pedido</h2>
+
+      <!-- form: action = a donde se envia, method = como se envia -->
+      <form action="#" method="post">
+
+        <p>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </p>
+
+        <p>
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </p>
+
+        <p>
+          <label for="cantidad">Cantidad de productos</label>
+          <input type="number" id="cantidad" name="cantidad" min="1" value="1">
+        </p>
+
+        <p>
+          <label for="pedido-detalle">¿Qué quieres pedir y a qué dirección?</label>
+          <textarea id="pedido-detalle" name="pedido" rows="4" required></textarea>
+        </p>
+
+        <button type="submit">Enviar pedido</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><a href="index.html">Volver al inicio</a></p>
+  </footer>
+
+</body>
+</html>
